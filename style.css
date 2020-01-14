@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+}
+
+header{
+    height: 400px;
+    /*border-image-width: 30px;
+    border-image-source: url(img/1.png);
+    border-image-slice: 30px;
+    border-image-repeat: stretch;*/
+    background-position: 0 -200px;
+    background-image: url(photo/main.jpg);
+    background-size: 100%;
+    
+}
+
+.main-menu ul{
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+}
+
+.main-menu ul li{
+    display: block;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main-menu ul li:hover a{
+    text-shadow: 5px 5px 10px black;
+}
+
+.main-menu ul li:active{
+    position: relative;
+    top: 5px;
+}
+
+.main-menu ul li a{
+    display: block;
+    height: 40px;
+    font-size: 27px;
+    color: #FCFF01;
+    margin: auto;
+    padding: 0px 24px;
+    font-family: 'Ruslan Display', cursive;
+    text-decoration: none;
+}
+
+main{
+    float: left;
+    background-color: #F7FD8B;
+    width: 100%;
+}
+
+
+/* Place page */
+
+.photofield, .photofield-redact{
+    background-color: skyblue;
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    top: -20px;
+    float: left;
+}
+
+.photofield-redact{
+    top: -300px;
+}
+
+.watchSlideShow, .nextPictures{
+    width: 80%;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 10%;
+    text-align: center;
+    line-height: 52px;
+    background-color: #00BFFF;
+    font-family: 'Ruslan Display', cursive;
+    text-decoration: none;
+    color: indigo;
+    font-size: 27px;
+    border: 3px solid indigo;
+    border-radius: 20px;
+}
+
+.nextPictures{
+    position: relative;
+    clear: both;
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 50px;
+}
+
+
+.watchSlideShow:hover{
+    cursor: pointer;
+    border: 8px solid yellow;
+    margin-top: 4px;
+}
+
+.nextPictures:hover{
+    cursor: pointer;
+    border: 5px solid indigo;
+    margin-top: 4px;
+}
+
+.mapfield{
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    top: -300px;
+    float: left;
+}
+
+.map{
+    float: left;
+    margin: auto;
+    width: 100%;
+    height: 750px;
+}
+
+.year{
+    clear: both;
+    /*float: left;*/
+}
+
+.year > p{
+    height: 25px;
+    font-family: 'Ruslan Display', cursive;
+    font-size: 50px;
+    margin-left: 45px;
+    margin-top: 25px;
+    padding: 8px;
+    color: yellow;
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black;
+    clear: both;
+}
+
+.photoblock{
+    display: block;
+    margin: 20px;
+    width: 300px;
+    height: 450px;
+    background-color: yellow;
+    float: left;
+}
+
+.photoblock_place{
+    display: block;
+    margin: 20px;
+    height: 150px;
+    background-color: skyblue;
+    float: left;
+    outline: 3px solid indigo;
+}
+
+.photoblock_place img{
+    margin: 0 auto;
+}
+
+.photoblock_place:hover{
+    cursor: pointer;
+    outline: 8px solid yellow;
+}
+
+.photoblock:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px #555;
+}
+
+.photoblock:active, .photoblock_place:active, .watchSlideShow:active, .nextPictures:active{
+    position: relative;
+    top: 7px;
+}
+
+.photoblock .h3{
+    display: block;
+    width: 300px;
+    text-align: center;
+    font-family: 'Ruslan Display', cursive;
+    font-size: 40px;
+}
+
+.photoblock p{
+    width: 300px;
+    text-align: center;
+    font-family: 'Ruslan Display', cursive;
+    font-size: 25px;
+}
+
+
+.photo{
+    width: 250px;
+    height: 300px;
+    margin: 15px auto;
+    background-color: indigo;
+    /*margin: 40px auto;*/
+    background-size: cover;
+    outline: 4px solid indigo;
+}
+
+
+
+
+
+/* photoViewer */
+
+.photoViewerField{
+    position: relative;
+    text-align: center;
+    max-height: 100%;
+    min-height: 100%;
+    height: 100%;
+    width: 70%;
+    float: left;
+}
+
+.photoViewerField img{
+    
+}
+
+.photoViewerBody{
+    background-color: black;
+}
+
+.photoViewerImageChanger{
+    position: relative;
+    text-align: center;
+    height: 100%;
+    width: 15%;
+    float: left;
+}
+
+.photoViewerImageChanger img{
+    vertical-align: middle;
+    width: 50%;
+}
+
+.photoViewerImageChanger img:hover{
+    cursor: pointer;
+    width: 80%;
+}
+
+.photoViewerImageChanger img:active{
+    position: relative;
+    top: 10px;
+}
+
+.config-inf{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Ruslan Display', cursive;
+    font-size: 40px;
+    margin-top: 40px;
+    color: #FCFF01;
+    text-shadow: 2px 2px 0 orange, -2px -2px 0 orange;
+}
+
+video{
+    margin-left: 15%;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Компьютеры и планшеты альбомной ориентации */
+@media screen and (min-width: 800px){
+    
+}
+
+/* Смартфоны альбомной ориентации */
+@media screen and (max-width: 800px){
+    
+}
+
+/* Планшеты книжной ориентации */
+@media screen and (min-width: 600px) and (orientation: portrait){
+    
+}
+
+/* Смартфоны книжной ориентации */
+@media screen and (max-width: 600px) and (orientation: portrait){
+    
+}
